@@ -1,0 +1,50 @@
+body{
+	margin: 0;
+
+}
+.road{
+	background-image: url("road.jpg");
+	background-size: auto 100%;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+}
+.car{
+	background-image: url('http://we.pena-app.ru/rcrtng/tasks/cars/bus.png');
+	height: 60%;
+	position: absolute;
+	top: 20%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: left 1s linear, transform 1s linear;
+	will-change: transform;
+	transform: translateX(-100%); 
+}
+.popUp{
+	width: 90%;
+	max-width: 500px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+.popUp.show{
+	display: flex;
+}
+.popUp h2{
+	text-align: center;
+	padding-bottom: 2%;
+}
+.popUp.empty .emptyText{
+	display: block;
+}
+.popUp .emptyText{
+	display: none;
+}

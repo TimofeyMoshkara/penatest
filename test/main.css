@@ -1,0 +1,36 @@
+.test, .result{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	box-shadow:  5px 5px 5px 5px #d6d6d6;
+
+}
+img{
+	width: 10%;
+}
+.question{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+}
+.questionText{
+}
+.radio{
+	display: none;
+}
+.active{
+	background-color: #bfbbbb;
+}
+.answer{
+	width: 30%;
+	padding:  1%;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.answer{
+	font-size: 20px;
+}
